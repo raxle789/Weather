@@ -23,6 +23,7 @@ const HomePage = () => {
     const [localTime, setLocalTime] = useState(null);
     const [color, setColor] = useState(false);
     let timeZone = [];
+    const apiKey = ''; //api key diisi dengan kode yang didapat dari penyedia api
     let cityName = inputFromUser();
     const now = new Date();
     const options = { weekday: 'short' };
@@ -42,7 +43,7 @@ const HomePage = () => {
     
     const getWeather = () => {
         console.log('kota: ', cityName);
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=03fb093a209eb4e2bf0e38bc670a5ecb`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`)
         .then(response => response.json())
         .then(response => {
             if(response.cod == "200") {
@@ -51,7 +52,7 @@ const HomePage = () => {
                 notify();
             }
         })
-        fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=03fb093a209eb4e2bf0e38bc670a5ecb`)
+        fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${apiKey}`)
         .then(response => response.json())
         .then(response => {
             if(response.cod == "200") {
