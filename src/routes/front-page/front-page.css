@@ -1,0 +1,109 @@
+.front-page-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 45vh;
+}
+.front-page-left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.front-logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 57px;
+}
+.sun-icon {
+    width: 85px;
+    height: auto;
+    margin-left: 4px;
+}
+.moon-icon {
+    width: 83px;
+    height: auto;
+    margin-left: 4px;
+}
+.desc {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.search-container {
+    width: 250px;
+    height: 37px;
+}
+.search-input {
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border-radius: 13px;
+    border: 1px solid #ffffff;
+}
+.search-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+.search-icon {
+    position: relative;
+    top: -34px;
+    left: 90%;
+    width: 28px;
+    height: auto;
+}
+.video-container {
+    width: 100%;
+    height: 100vh;
+}
+.video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+}
+.transparent-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .65);
+    z-index: -1;
+}
+
+@media screen and (min-width: 301px) and (max-width: 630px) {
+    .front-page-main {
+        flex-direction: column;
+        margin-top: 26vh;
+    }
+    .front-page-left {
+        margin-bottom: 20vh;
+    }
+    .front-logo {
+        font-size: 47px;
+    }
+    .desc {
+        font-size: 18px;
+    }
+    .sun-icon {
+        width: 68px;
+    }
+    .moon-icon {
+        width: 67px;
+    }
+    .search-input {
+        margin-left: -4%;
+    }
+    .search-container {
+        width: 230px;
+        height: 37px;
+    }
+    .video-container {
+        height: 30vh;
+    }
+}

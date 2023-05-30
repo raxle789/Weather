@@ -1,0 +1,46 @@
+{/* <div className="sub-right-second-section">
+                            <h3 className="second-section-weather-day">{longData ? new Date(longData.list[16].dt_txt).toLocaleDateString("en-US", { weekday: "short" }) : "not known"}</h3>
+                            {longData && longData.list && <WeatherIcons weatherType={`w${longData.list[16].weather[0].icon}`} className='second-section-weather-icon' />}
+                            <marquee className='second-section-weather-info' direction='left' scrollamount="3">{longData ? longData.list[16].weather[0].description[0].toUpperCase() + longData.list[16].weather[0].description.slice(1, 35) : "not known"}</marquee>
+                            <h3 className="weather-info2">{longData ? (longData.list[16].main.temp_max - 273.15).toFixed(0) + "\u00B0 / " + (longData.list[16].main.temp_min - 273.15).toFixed(0) + '\u00B0' : "0"}</h3>
+                        </div>
+                        <div className="sub-right-second-section">
+                            <h3 className="second-section-weather-day">{longData ? new Date(longData.list[24].dt_txt).toLocaleDateString("en-US", { weekday: "short" }) : "not known"}</h3>
+                            {longData && longData.list && <WeatherIcons weatherType={`w${longData.list[24].weather[0].icon}`} className='second-section-weather-icon' />}
+                            <marquee className='second-section-weather-info' direction='left' scrollamount="3">{longData ? longData.list[24].weather[0].description[0].toUpperCase() + longData.list[24].weather[0].description.slice(1, 35) : "not known"}</marquee>
+                            <h3 className="weather-info2">{longData ? (longData.list[24].main.temp_max - 273.15).toFixed(0) + "\u00B0 / " + (longData.list[24].main.temp_min - 273.15).toFixed(0) + '\u00B0' : "0"}</h3>
+                        </div>
+                        <div className="sub-right-second-section">
+                            <h3 className="second-section-weather-day">{longData ? new Date(longData.list[32].dt_txt).toLocaleDateString("en-US", { weekday: "short" }) : "not known"}</h3>
+                            {longData && longData.list && <WeatherIcons weatherType={`w${longData.list[32].weather[0].icon}`} className='second-section-weather-icon' />}
+                            <marquee className='second-section-weather-info' direction='left' scrollamount="3">{longData ? longData.list[32].weather[0].description[0].toUpperCase() + longData.list[32].weather[0].description.slice(1, 35) : "not known"}</marquee>
+                            <h3 className="weather-info2">{longData ? (longData.list[32].main.temp_max - 273.15).toFixed(0) + "\u00B0 / " + (longData.list[32].main.temp_min - 273.15).toFixed(0) + '\u00B0' : "0"}</h3>
+                        </div> */}
+
+{/* <div className="long-info-container">
+                            <div className="sub-long-info-container">
+                                <h3>Now</h3>
+                                {shortData && shortData.weather && <WeatherIcons weatherType={`w${shortData.weather[0].icon}`} className='weather-long-info-icon' />}
+                                <h3 className="weather-long-info">{shortData ? (shortData.main.temp - 273.15).toFixed(0) + '\u00B0' : "0"}</h3>
+                            </div>
+                            <div className="sub-long-info-container1">
+                                <h3>{longData ? new Date(longData.list[0].dt * 1000).getHours() + ".00" : '0'}</h3>
+                                {longData && longData.list && <WeatherIcons weatherType={`w${longData.list[0].weather[0].icon}`} className='weather-long-info-icon' />}
+                                <h3 className="weather-long-info">{longData && longData.list ? (longData.list[0].main.temp - 273.15).toFixed(0) + '\u00B0' : "0"}</h3>
+                            </div>
+                            <div className="sub-long-info-container1">
+                                <h3>{longData ? new Date(longData.list[1].dt * 1000).getHours() + ".00" : '0'}</h3>
+                                {longData && longData.list && <WeatherIcons weatherType={`w${longData.list[1].weather[0].icon}`} className='weather-long-info-icon' />}
+                                <h3 className="weather-long-info">{longData && longData.list ? (longData.list[1].main.temp - 273.15).toFixed(0) + '\u00B0' : "0"}</h3>
+                            </div>
+                            <div className="sub-long-info-container1">
+                                <h3>{longData ? new Date(longData.list[2].dt * 1000).getHours() + ".00" : '0'}</h3>
+                                {longData && longData.list && <WeatherIcons weatherType={`w${longData.list[2].weather[0].icon}`} className='weather-long-info-icon' />}
+                                <h3 className="weather-long-info">{longData && longData.list ? (longData.list[2].main.temp - 273.15).toFixed(0) + '\u00B0' : "0"}</h3>
+                            </div>
+                            <div className="sub-long-info-container1">
+                                <h3>{longData ? new Date(longData.list[3].dt * 1000).getHours() + ".00" : '0'}</h3>
+                                {longData && longData.list && <WeatherIcons weatherType={`w${longData.list[3].weather[0].icon}`} className='weather-long-info-icon' />}
+                                <h3 className="weather-long-info">{longData && longData.list ? (longData.list[3].main.temp - 273.15).toFixed(0) + '\u00B0' : "0"}</h3>
+                            </div>
+                        </div> */}
