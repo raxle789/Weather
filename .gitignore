@@ -11,6 +11,11 @@
 # production
 /build
 
+# file-file
+/src/routes/home-page/cadangan.txt
+/src/routes/home-page/eror.txt
+api-key.txt
+
 # misc
 .DS_Store
 .env.local
