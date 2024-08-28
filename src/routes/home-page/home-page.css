@@ -434,7 +434,7 @@
   }
 }
 
-@media screen and (min-width: 631px) and (max-width: 900px) {
+@media screen and (min-width: 631px) and (max-width: 1150px) {
   .first-section {
     padding: 0 60px;
   }
@@ -449,7 +449,7 @@
   }
 }
 
-@media screen and (min-width: 901px) and (max-width: 1279px) {
+@media screen and (min-width: 1151px) and (max-width: 1279px) {
   .first-section {
     padding: 0 45px;
   }
